@@ -10,8 +10,8 @@ class App < Sinatra::Base
   end
 
   post '/puppy' do
-    raise params.inspect
     @puppy = Puppy.new(params[:name], params[:breed], params[:age])
+    binding.pry
     erb :display_puppy
   end
 end
