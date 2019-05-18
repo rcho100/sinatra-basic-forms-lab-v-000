@@ -6,11 +6,10 @@ class App < Sinatra::Base
   end
 
   get '/create_puppy' do
-    "Hello"
     erb :create_puppy
   end
 
   post '/puppy' do
-    
+
   end
 end
